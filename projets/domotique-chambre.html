@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domotique ESP32 | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Ton<span>Nom</span>.</div>
+        <ul class="nav-links">
+            <li><a href="../index.html#projects" class="btn-contact"><i class="fas fa-arrow-left"></i> Retour</a></li>
+        </ul>
+    </nav>
+
+    <section class="project-hero">
+        <div class="container">
+            <h1>Domotique & IoT : Chambre Connectée</h1>
+            <p class="subtitle">Automatisation d'éclairage et station météo connectée</p>
+            <div class="project-meta">
+                <span><i class="fas fa-microchip"></i> ESP32</span>
+                <span><i class="fas fa-wifi"></i> IoT Cloud</span>
+                <span><i class="fas fa-mobile-alt"></i> iOS Widget</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="container project-content">
+        
+        <div class="content-block">
+            <h2>1. Le Matériel utilisé</h2>
+            <p>
+                Pour ce projet, j'ai choisi l'<strong>ESP32</strong> pour sa connectivité Wi-Fi native. J'ai couplé ce microcontrôleur à un <strong>servomoteur</strong> pour l'action physique et un capteur de précision (BME280 ou DHT) pour les relevés environnementaux.
+            </p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="../images/esp32.jpg" alt="ESP32">
+                    <p class="caption">Le microcontrôleur ESP32</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="../images/servo-motor.jpg" alt="Servomoteur">
+                    <p class="caption">Servomoteur pour l'actionneur</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="../images/module-temp.jpg" alt="Module température">
+                    <p class="caption">Capteur Température, Humidité et Pression</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h2>2. Conception Mécanique "Non-Invasive"</h2>
+            <p>
+                L'objectif était de pouvoir commander la lumière sans modifier l'installation électrique. J'ai conçu un boîtier en carton renforcé fixé au mur. À l'intérieur, le servomoteur est positionné de manière à actionner l'interrupteur mécaniquement via un bras de levier programmé.
+            </p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="../images/boitier-interrupteur.jpg" alt="Installation murale">
+                    <p class="caption">Installation du servomoteur sur l'interrupteur</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h2>3. Arduino IoT Cloud & Dashboard</h2>
+            <p>
+                J'ai connecté l'ESP32 à l'<strong>Arduino IoT Cloud</strong>. Cela me permet d'avoir un tableau de bord (Dashboard) accessible partout dans le monde pour surveiller les données de ma chambre et piloter la lumière à distance via une interface web ou mobile.
+            </p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="../images/iot-dashboard.jpg" alt="Dashboard Arduino IoT Cloud">
+                    <p class="caption">Interface de contrôle Cloud</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h2>4. Serveur Web Local et Widget iPhone</h2>
+            <p>
+                En parallèle du Cloud, l'ESP32 héberge un <strong>serveur Web local</strong> ultra-léger. J'ai utilisé cette API locale pour créer un <strong>Widget sur mon iPhone</strong>. Je peux ainsi voir la température et l'humidité directement sur mon écran d'accueil sans même ouvrir d'application.
+            </p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="../images/iphone-widget.jpg" alt="Widget iOS">
+                    <p class="caption">Widget personnalisé sur iOS</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Projet réalisé par Ton Prénom | Passionné IoT</p>
+    </footer>
+
+</body>
+</html>
