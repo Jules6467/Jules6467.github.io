@@ -1,61 +1,133 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>Mon Portfolio</title>
-<style>
-body{
-    font-family: Arial;
-    margin:0;
-    background:#0f172a;
-    color:white;
-}
-header{
-    padding:60px;
-    text-align:center;
-    background:#1e293b;
-}
-section{
-    max-width:900px;
-    margin:auto;
-    padding:40px 20px;
-}
-.project{
-    background:#1e293b;
-    padding:20px;
-    margin:20px 0;
-    border-radius:10px;
-}
-a{color:#38bdf8;text-decoration:none;}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Développeur Junior</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-<h1>Ton Prénom</h1>
-<p>Je crée des projets pour apprendre et progresser 🚀</p>
-</header>
+    <nav class="navbar">
+        <div class="logo">Ton<span>Nom</span>.</div>
+        <ul class="nav-links">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact" class="btn-contact">Me contacter</a></li>
+        </ul>
+        <div class="burger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
 
-<section>
-<h2>Mes projets</h2>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h4>Bonjour, je m'appelle</h4>
+            <h1>Ton Prénom</h1>
+            <h3>Étudiant <span class="highlight">NSI & Maths</span> | Futur Développeur</h3>
+            <p>Passionné par le code et la logique. Je crée des solutions modernes en Python et Web.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn primary">Voir mes projets</a>
+                <a href="#contact" class="btn secondary">Mon CV</a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <i class="fas fa-code"></i>
+        </div>
+    </section>
 
-<div class="project">
-<h3>Projet 1</h3>
-<p>Description du projet</p>
-</div>
+    <section id="about" class="container">
+        <h2 class="section-title">À propos de moi</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    Actuellement en <strong>Terminale Générale</strong> avec les spécialités <strong>Mathématiques et NSI</strong> (Numérique et Sciences Informatiques), j'ai 17 ans et je me dirige vers une carrière dans l'ingénierie informatique.
+                </p>
+                <p>
+                    Curieux et autonome, j'aime résoudre des problèmes algorithmiques complexes et créer des interfaces web épurées. Mon objectif est d'approfondir mes connaissances en Data Science et en Développement Web.
+                </p>
+            </div>
+        </div>
+    </section>
 
-<div class="project">
-<h3>Projet 2</h3>
-<p>Description du projet</p>
-</div>
+    <section id="skills" class="container">
+        <h2 class="section-title">Mes Compétences</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-python"></i>
+                <h3>Python</h3>
+                <p>Algorithmique, Traitement de données</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <h3>SQL</h3>
+                <p>Gestion de bases de données, Requêtes</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5 & CSS3</h3>
+                <p>Structure sémantique, Flexbox, Grid</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-terminal"></i>
+                <h3>Outils</h3>
+                <p>Git, VS Code, Linux</p>
+            </div>
+        </div>
+    </section>
 
-</section>
+    <section id="projects" class="container">
+        <h2 class="section-title">Mes Projets</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Jeu Pygame</h3>
+                    <p>Un jeu d'arcade codé entièrement en Python avec la bibliothèque Pygame pour mon projet de 1ère.</p>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>POO</span>
+                    </div>
+                    <a href="#" class="link"><i class="fab fa-github"></i> Voir le code</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Site E-commerce</h3>
+                    <p>Maquette d'un site de vente avec un design responsive et une base de données simulée.</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>SQL</span>
+                    </div>
+                    <a href="#" class="link"><i class="fab fa-github"></i> Voir le code</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Analyse de Données</h3>
+                    <p>Script Python pour analyser des fichiers CSV et générer des graphiques avec Matplotlib.</p>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                    </div>
+                    <a href="#" class="link"><i class="fab fa-github"></i> Voir le code</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section>
-<h2>Contact</h2>
-<p>Email : tonmail@gmail.com</p>
-</section>
+    <footer>
+        <p>Créé par Ton Prénom &copy; 2024</p>
+        <div class="socials">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:tonemail@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
 
 </body>
 </html>
