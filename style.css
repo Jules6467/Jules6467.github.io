@@ -8,7 +8,7 @@
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     
     /* MODIFICATION ICI : Opacité augmentée à 0.15 pour qu'on le voie bien */
-    --grid-color: rgba(45, 212, 191, 0.15); 
+    --grid-color: red; 
 }
 
 body {
