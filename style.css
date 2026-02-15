@@ -114,4 +114,19 @@ footer { text-align: center; padding: 50px; background: #0a101e; }
     .hero-content h1 { font-size: 2.5rem; }
     .hero-img { display: none; }
     .nav-links { display: none; }
+/* Ce bloc va forcer l'affichage du quadrillage au-dessus de tout le reste */
+.grid-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* On utilise ici une couleur forte (0.2) pour être sûr que tu le vois */
+    background-image: 
+        linear-gradient(rgba(45, 212, 191, 0.2) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(45, 212, 191, 0.2) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none; /* TRÈS IMPORTANT : permet de cliquer sur tes boutons derrière */
+    z-index: 9999; /* Met le quadrillage au-dessus de toutes les sections */
+}
 }
