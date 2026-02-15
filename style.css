@@ -15,6 +15,14 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--bg);
+    
+    /* AJOUT DU QUADRILLAGE */
+    background-image: 
+        linear-gradient(rgba(45, 212, 191, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(45, 212, 191, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-attachment: fixed;
+    
     color: var(--text);
     line-height: 1.6;
     scroll-behavior: smooth;
@@ -43,7 +51,8 @@ body {
 /* Hero Section */
 .hero {
     height: 100vh; display: flex; align-items: center; padding: 0 8%;
-    background: radial-gradient(circle at 80% 20%, rgba(45, 212, 191, 0.05) 0%, transparent 40%);
+    /* Utilisation de background-image pour ne pas écraser le fond du body */
+    background-image: radial-gradient(circle at 80% 20%, rgba(45, 212, 191, 0.05) 0%, transparent 40%);
 }
 
 .hero-content h1 { font-size: 3.5rem; margin-bottom: 1rem; line-height: 1.2; }
